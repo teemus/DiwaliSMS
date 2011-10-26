@@ -30,7 +30,7 @@ f.readlines.each { |line|
         
             # Compose the SMS
             # Modify the body of 'message' accordingly
-            message = "Hi, #{details[0]}. Wishing you a very happy and properous Diwali!\n-Sumeet Mulani."
+            message = "Hi, #{details[0]}. Wishing you a very happy and prosperous Diwali!\n-Sumeet Mulani."
             # Send it!
             sp = SerialPort.new(port_str, baud_rate, data_bits, stop_bits, parity)
             sp.write("AT+CMGF=1" + "\n\r")
